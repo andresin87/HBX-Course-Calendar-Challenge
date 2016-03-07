@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>HBX</title>
+        <meta name="description" content="Earn your Credential of Readiness and learn the fundamentals of business thinking - Business Analytics, Economics, and Financial Accounting at HBX.">
+        <meta name="keywords" content="Credential of Readiness, Core, HBX Core, Undergraduate, Post Graduate, Students, Professionals, Business, Learning, HBX, Harvard, Online">
+        <link rel="canonical" href="http://hbx.hbs.edu/hbx-core">
+        <!--<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>-->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css"/>
+        <link type="text/css" rel="stylesheet" href="css/flickity.css"/>
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+        <link type="text/css" rel="stylesheet" href="fonts/fonts.css"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/flag-icon.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+        <link type="text/css" rel="stylesheet" href="css/calendar.css"/>
+        <link type="text/css" rel="stylesheet" href="css/progress.css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top top-bar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" id="logo" href="#">
+                            <img src="img/hbx-logo.png" alt="Home">
+                        </a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list"></i><span class="caret"></span></a>
+                            <ul class="dropdown-menu" style="background: #a41034;">
+                                <!--<li><a href="#" onclick="selectView(14,1)">Business Analytics Business Analytics</a></li>
+                                <li><a href="#"onclick="selectView(14,2)">Economics for Managers</a></li>
+                                <li><a href="#" onclick="selectView(14,3)">Financial Accounting</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-archive"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                        <li><a href="#"><i class="fa fa-bell-o"></i></a></li>
+                        <li><a href="#"><i class="fa fa-smile-o"></i></a></li>
+                        <li><a href="#"><img id="profilePicture" style="    border: 2px solid rgba(0,0,0,.2);border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;margin:-5px; height: 34px;" src="img/face/0.jpg"></a></li>
+
+                    </ul>
+                    <div id="course" style="font-family: 'Trade Gothic Bold 2';text-transform: uppercase;float: right; margin-top: 14px; margin-bottom: 14px;padding-right: 5px;    border-right: 1px solid;">Name of the course</div>
+
+                </div>
+            </nav>
+        </header>
+        <div class="loader" style="position:absolute;width:100%;top:50px;z-index:100;background:#57091c;height: calc(100% - 50px); height: -moz-calc(100% - 50px);    background: #57091c;">
+            <div style="position: absolute;width: 500px;top: calc(50% - 105px);right: calc(50% - 250px);top: -moz-calc(50% - 105px);right: -moz-calc(50% - 250px);">
+                <img src="img/HBX-Logo-Color.svg"/>
+                <h1 style="float: right;margin-top: -41px;font-family: 'Trade Gothic Bold 2';color: #FFFFFF;">LOADING...</h1>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom:300px;background: #57091c;margin-top: 50px;">
+            <div class="container">
+                <div class="jumbo">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div style="float: right;">
+                                <div style="z-index: 0">
+                                    <img style="height: 198px;"src="img/hexagon.svg"/>
+                                    <div id="profilePicture" class="hexagon" style="background-image: url(img/face/0.jpg);margin-top: -141px;margin-left: 26px;">
+                                        <div class="hexTop"></div>
+                                        <div class="hexBottom"></div>
+                                    </div>
+                                </div>
+                                <div style="z-index: 1">
+                                    <div id="badge" style=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div id="course" style="margin-top:10px;float: leftwidth:100%">
+                                <h2 id="courseName">Name of the course</h2>
+                                <div style="margin-top: -15px;margin-bottom: 10px;">
+                                    <span id="startDate" style="font-family: 'Trade Gothic Bold';font-size: 12px;">Feb 16 2015</span> - <span id="endDate" style="font-family: 'Trade Gothic Bold';font-size: 12px;">Jun 30 2015</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-11">
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="info-vr">
+                                                <p id="course-explanation" style="height: 90px;">
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                                                </p>
+                                                <div class="row">
+                                                    <div class="col-xs-3"><div id="module" style="font-family: 'Trade Gothic Bold 2';font-size: 28px;">3</div>Modules</div>
+                                                    <div class="col-xs-3"><div id="lesson" style="font-family: 'Trade Gothic Bold 2';font-size: 28px;">7</div>Lessons</div>
+                                                    <div class="col-xs-3"><div id="concept" style="font-family: 'Trade Gothic Bold 2';font-size: 28px;">36</div>Concepts</div>
+                                                    <div class="col-xs-3"><div id="te" style="font-family: 'Trade Gothic Bold 2';font-size: 28px;">72</div>Teaching elements</div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="profile-vr">
+                                                <div class="row">
+
+                                                    <div class="col-xs-4">
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><div id="studentNumber" style="font-family: 'Trade Gothic Bold 2';font-size: 28px;">30</div>Students</div>
+                                                            <div class="col-xs-6"><div id="nationalitiesNumber" style="font-family: 'Trade Gothic Bold 2';font-size: 28px;">6</div>Nationalities</div>
+                                                        </div>
+                                                        <div class="row" style="margin-top: 20px;">
+                                                            <div class="col-xs-12" class="nationalitiesUpper">
+                                                                <div class="nationalities" style="max-height:91px;border-top: 1px solid #FFFFFF;border-left: 1px solid #FFFFFF;">
+                                                                    <div style="padding: 15px">
+                                                                        <button type="button" class="btn btn-primary btn-xs"><span class="flag-icon flag-icon-gr"></span></button>
+                                                                        <button type="button" class="btn btn-primary btn-xs"><span class="flag-icon flag-icon-es"></span></button>
+                                                                        <button type="button" class="btn btn-primary btn-xs"><span class="flag-icon flag-icon-gb"></span></button>
+                                                                        <button type="button" class="btn btn-primary btn-xs"><span class="flag-icon flag-icon-de"></span></button>
+                                                                        <button type="button" class="btn btn-primary btn-xs"><span class="flag-icon flag-icon-ru"></span></button>
+                                                                        <button type="button" class="btn btn-primary btn-xs"><span class="flag-icon flag-icon-si"></span></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-8">
+                                                        <div id="studentContainer" style="width:100% !important; max-height:170px;">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <div class="students" style="width:100% !important; max-height:170px;display:list-item;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-1"> <!-- required for floating -->
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs tabs-right sideways">
+                                            <li class="active"><a href="#info-vr" data-toggle="tab">
+                                                  <i class="fa fa-info"></i>
+                                            </a></li>
+                                            <li><a href="#profile-vr" data-toggle="tab">
+                                                  <i class="fa fa-user"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 40px">
+                        <div class="col-xs-4">
+                            <div class="row" style="margin-top: -93px;">
+                                <div class="col-xs-12">
+                                    <div style="float:right;" id="info-student-name">
+                                        <h2>Student 0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="info-student" class="list-group" style="text-align: right">
+                                    <!--<li id="info-student-name" class="list-group-item"><h2>Student 0</h2></li>-->
+                                    <li id="info-student-info" class="list-group-item">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</li>
+                                    <li id="info-student-contact" class="list-group-item"></li>
+                                    <li id="info-student-general" class="list-group-item">
+                                        <div class="row">
+                                            <div id="info-student-general-module" class="col-xs-6">
+                                                <div style="width: 100%;font-family: 'Trade Gothic Bold'; font-size: 16px;">MODULES</div>
+                                                <div style="display: -webkit-box;width: 100%; border-right: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF;">
+                                                    <div style="width: 50%">
+                                                        <div id="info-student-general-module-donut"></div>
+                                                    </div>
+                                                    <div style="padding: 10px 10px 0 0;width: 45%;font-family: 'Trade Gothic Bold'; font-size: 26px;">
+                                                        <sup id="donut-sup-el-mo">1</sup>/<sub id="donut-sup-el-mo">5</sub>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="info-student-general-lesson" class="col-xs-6">
+                                                <div style="width: 100%;font-family: 'Trade Gothic Bold'; font-size: 16px;">LESSONS</div>
+                                                <div style="display: -webkit-box;width: 100%; border-right: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF;">
+                                                    <div style="width: 50%">
+                                                        <div id="info-student-general-lesson-donut"></div>
+                                                    </div>
+                                                    <div style="padding: 10px 10px 0 0;width: 45%;font-family: 'Trade Gothic Bold'; font-size: 26px;">
+                                                        <sup id="donut-sup-el-le">6</sup>/<sub id="donut-sub-el-le">33</sub>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div id="info-student-general-concept" class="col-xs-6">
+                                                <div style="width: 100%;font-family: 'Trade Gothic Bold'; font-size: 16px;">CONCEPTS</div>
+                                                <div style="display: -webkit-box;width: 100%; border-right: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF;">
+                                                    <div style="width: 50%">
+                                                        <div id="info-student-general-concept-donut"></div>
+                                                    </div>
+                                                    <div style="padding: 10px 10px 0 0;width: 45%;font-family: 'Trade Gothic Bold'; font-size: 26px;">
+                                                        <sup id="donut-sup-el-co">20</sup>/<sub id="donut-sub-el-co">69</sub>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="info-student-general-te" class="col-xs-6">
+                                                <div style="width: 100%;font-family: 'Trade Gothic Bold'; font-size: 16px;">TEACHING ELEMENTS</div>
+                                                <div style="display: -webkit-box;width: 100%; border-right: 1px solid #FFFFFF;border-top: 1px solid #FFFFFF;">
+                                                    <div style="width: 50%">
+                                                        <div id="info-student-general-te-donut"></div>
+                                                    </div>
+                                                    <div style="padding: 10px 10px 0 0;width: 45%;font-family: 'Trade Gothic Bold'; font-size: 26px;">
+                                                        <sup id="donut-sup-el-te">40</sup>/<sub id="donut-sub-el-te">262</sub>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div style="border-top:1px solid #FFFFFF; /*border-right: 1px solid #FFFFFF;*/width:100%; border-bottom:1px solid #FFFFFF;">
+                                        <div class="row">
+                                            <div class="col-xs-8">
+                                                <h2 style="margin-top:29px;">CALENDAR:</h2>
+                                                <div style="width:100%;height: 194px;border-bottom:1px solid #FFFFFF;border-left: #FFFFFF solid 1px;" class="calendar"></div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <h4 style="margin-top: 41px;">CURRENT:</h4>
+                                                <div style="padding: 0px 20px;width:100%;height: 194px;border-top:1px solid #FFFFFF;border-left: #FFFFFF solid 1px;" class="calendar-current"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div id="progress-width-reference" style="width:100%">
+                                                    <h2 style="margin-top:29px;">PROGRESS:</h2>
+                                                    <div style="height: 100px;width:100%; /*border-left: 1px solid #FFFFFF*/"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" style="margin-top: -122px;">
+                            <div id="progress">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <h1>Navbar example</h1>
+                    <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+                    <p>To see the difference between static and fixed top navbars, just scroll.</p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
+                    </p>
+                    -->
+                </div>
+            </div>
+        </div>
+        <footer style="width:100%;position: fixed;bottom: 0px;/*display:none;*/">
+            <div style="margin-bottom:0px">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="margin-top:-43px">
+                    <li role="presentation"><a style="background: rgba(71,7,23,1);" href="#brand" aria-controls="brand" role="tab" data-toggle="tab"><div><i style="color: #FFFFFF;" class="fa fa-black-tie"></i></div></a></li>
+                    <li role="presentation"><a style="background: rgba(71,7,23,1);" href="#dictionary" aria-controls="dictionary" role="tab" data-toggle="tab"><div><i style="color: #FFFFFF;" class="fa fa-database"></i></div></a></li>
+                    <li role="presentation"><a style="background: rgba(71,7,23,1);" href="#tools" aria-controls="tools" role="tab" data-toggle="tab"><div><i style="color: #FFFFFF;" class="fa fa-book"></i></div></a></li>
+                    <li role="presentation" class="active"><a style="background: rgba(71,7,23,1);" href="#users" aria-controls="users" role="tab" data-toggle="tab"><div><i style="color: #FFFFFF;" class="fa fa-tachometer"></i></div></a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="height: 200px;background-color: rgba(71,7,23,1);">
+                    <div role="tabpanel" class="tab-pane active" id="users">...</div>
+                    <div role="tabpanel" class="tab-pane" id="brand">
+                        <div class="row">
+                            <div class="col-xs-12" style="padding: 0 30px; color:#FFFFFF;">
+                                <div id="innerBrand" style="max-height:180px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="dictionary">
+                        <div class="row">
+                            <div class="col-xs-12" style="padding: 0 30px; color:#FFFFFF;">
+                                <div id="innerDictionary" style="max-height:180px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tools">
+                        <div class="row">
+                            <div class="col-xs-12" style="padding: 0 30px; color:#FFFFFF;">
+                                <div id="innerTools" style="max-height:180px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                </div>
+
+            </div>
+        </footer>
+        <script type="application/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="application/javascript" src="js/bootstrap.js"></script>
+        <script type="application/javascript" src="js/umd/tooltip.js"></script>
+        <!--<script type="application/javascript" src="js/boundle.js"></script>-->
+        <script type="application/javascript" src="js/enscroll.js"></script>
+        <script type="application/javascript" src="js/flickity.pkgd.min.js"></script>
+        <script type="application/javascript" src="js/moment.min.js"></script>
+        <script type="application/javascript" src="js/moment-range.min.js"></script>
+        <script type="application/javascript" src="js/chance.min.js"></script>
+        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <!--<script type="application/javascript" src="js/d3.v4.0.0-alpha.23.min.js"></script>-->
+        <script type="application/javascript" src="js/client.js"></script>
+        <script type="application/javascript" src="js/dataServer.js"></script>
+        <script type="application/javascript" src="js/donut.js"></script>
+        <script type="application/javascript" src="js/brush.js"></script>
+        <script type="application/javascript" src="js/calendar.js"></script>
+        <script type="application/javascript" src="js/d3.tip.v0.6.3.js"></script>
+        <script type="application/javascript" src="js/progress.js"></script>
+        <script type="application/javascript" src="js/globalStatus.js"></script>
+        <!--<script type="application/javascript" src="js/badge.js"></script>-->
+        <script type="application/javascript">
+            $('footer div.tab-content div#brand div.row div.col-xs-12 div#innerBrand').load('brand.html');
+            $('footer div.tab-content div#brand div.row div.col-xs-12 div#innerBrand').enscroll({
+                showOnHover: true,
+                verticalTrackClass: 'track3',
+                verticalHandleClass: 'handle3'
+            });
+            $('footer div.tab-content div#brand div.row div.col-xs-12 div#innerBrand').css('width','100%');
+
+            $('footer div.tab-content div#dictionary div.row div.col-xs-12 div#innerDictionary').load('dictionary.html');
+            $('footer div.tab-content div#dictionary div.row div.col-xs-12 div#innerDictionary').enscroll({
+                showOnHover: true,
+                verticalTrackClass: 'track3',
+                verticalHandleClass: 'handle3'
+            });
+            $('footer div.tab-content div#dictionary div.row div.col-xs-12 div#innerDictionary').css('width','100%');
+
+            $('footer div.tab-content div#tools div.row div.col-xs-12 div#innerTools').load('tools.html');
+            $('footer div.tab-content div#tools div.row div.col-xs-12 div#innerTools').enscroll({
+                showOnHover: true,
+                verticalTrackClass: 'track3',
+                verticalHandleClass: 'handle3'
+            });
+            $('footer div.tab-content div#tools div.row div.col-xs-12 div#innerTools').css('width','100%');
+            //var student = new client();
+            //////////////////////////////////////////////////////////////////////////////////////////
+            º = º({
+                calendarJSON:"json/calendar.json"
+                ,courseJSON:"json/course_data.json"
+                ,studentJSON:"json/student_data.json"
+                ,userJSON:"json/userbulk.json"
+            });
+
+            var settings = {
+                course:Object.keys(º.data['course'])[1]
+                ,student:º.data['course'][Object.keys(º.data['course'])[0]]['student'][13].student_id
+                , date: new Date()
+            };
+            º = º.º(settings);
+            º.start();
+            $('.loader').hide();
+            /////////////////////////////////////////////////////////////////////////
+            /*var data = º.qry({
+                course:settings.course
+                ,student:settings.student
+            });*/
+            //º.update(data);
+            //º.qry(settings,function(d){
+            //    student.load(d);
+            //});
+            function selectView(student,course,date){
+                if(!date)
+                    date = new Date();
+                var str = º.qry({course:course,student:student,currDate:date});
+                º.client.load(str);
+            }
+
+            /*$("#course-explanation").enscroll({
+                showOnHover: true,
+                verticalTrackClass: 'track3',
+                verticalHandleClass: 'handle3'
+            });*/
+
+
+            //updateBadge(0);
+        </script>
+    </body>
+</html>

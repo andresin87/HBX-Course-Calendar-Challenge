@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+    <h1>calendar.csv</h1>
+    <ul>
+        <li><b>course</b>: course name.</li>
+        <li><b>course_number</b>: numeric ID of course, same as course_data.csv and student_data.csv.</li>
+        <li><b>module_number</b>: numeric ID of module; IDs are ordered in sequence of modules as they enter the course.</li>
+        <li><b>release_date</b>: module release date. Assume 00:00.00 as release time.</li>
+        <li><b>due_date</b>: Assume 23:59:59 as due time.</li>
+    </ul>
+    <h1>course_data.csv</h1>
+    <ul>
+        <li><b>course_number</b>: numeric ID of course.</li>
+        <li><b>module_number</b>: numeric_ID of module, same as calendar.csv and studen_data.csv.</li>
+        <li><b>lesson_number</b>: numeric ID of lesson; unique within each course; lesson numeric IDs are ordered in sequence within each module but may have gaps in numbering; IDs are same as in calendar.csv and student_data.csv.</li>
+        <li><b>concept_number</b>: numeric ID of concept; unique within each course; concept numeric IDs are ordered in sequence within each lesson but may have gaps in numbering; IDs are same as in calendar.csv and student_data.csv.</li>
+        <li><b>te_number</b>: numeric ID of teaching element; unique within each course; teaching element numeric IDs are ordered in sequence within each concept but may have gaps in numbering; IDs are same as in calendar.csv and student_data.csv.</li>
+    </ul>
+    <h1>student_data.csv</h1>
+    <ul>
+        <li><b>student_id</b>: numeric ID of a student. Order of student numeric IDs does not matter.</li>
+        <li><b>course_number</b>: numeric ID of course.</li>
+        <li><b>module_number</b>: numeric ID of module.</li>
+        <li><b>lesson_number</b>: numeric ID of lesson.</li>
+        <li><b>concept_number</b>: numeric ID of concept.</li>
+        <li><b>te_number</b>: numeric ID of teaching element.</li>
+        <li><b>completiondate</b>: historic date and time of content element completion by student.</li>
+    </ul>
+    <h2>Notes</h2>
+    <p>Student completion data is not fully consistent with course structure data. In some instances, you may observe that a student moved straight to the next module without registering completion of a few final elements of the previous module. This is not possible on the platform -- all content from a previous module must be completed before proceeding to the next module. In such cases, assume that the data didn't capture the timing of completion, and that the student completed all content from the previous module before starting on the next one.</p>
+</body>
+</html>

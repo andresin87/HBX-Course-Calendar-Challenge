@@ -1,0 +1,11 @@
+
+svg#HBX-calendar g.modules g.module path{
+    fill:none;
+}
+svg#HBX-calendar g.modules g.module.highlight path{
+    fill: #000000;
+    opacity: .8;
+}
+svg#HBX-calendar g.modules g.module.active path{
+    fill:#a41034;
+}
